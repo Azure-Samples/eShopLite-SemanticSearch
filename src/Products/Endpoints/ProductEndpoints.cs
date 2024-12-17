@@ -2,10 +2,8 @@
 using DataEntities;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
-using Products.Memory;
 using Products.Models;
-using OpenAI.Embeddings;
-using OpenAI.Chat;
+using Products.Memory;
 
 namespace Products.Endpoints;
 
@@ -133,9 +131,9 @@ public static class ProductEndpoints
 
         #region AI Search Endpoint
         routes.MapGet("/api/aisearch/{search}",
-            async (string search, Context db, MemoryContext mc) =>
+            async (string search, MemoryContext mc) =>
             {
-                var result = await mc.Search(search, db);
+                var result = await mc.Search(search);
                 return Results.Ok(result);
             })
             .WithName("AISearch")
