@@ -18,8 +18,9 @@
     <PackageReference Include="Aspire.Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
     <PackageReference Include="CommunityToolkit.Aspire.OllamaSharp" Version="9.1.0" />
     <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="9.0.1-preview.1.24570.5" />
-    <PackageReference Include="Microsoft.SemanticKernel.Connectors.InMemory" Version="1.32.0-preview" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.InMemory" Version="1.33.0-preview" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.10.1" />
     <!--AI Search NuGet packages-->
   </ItemGroup>
   <ItemGroup>

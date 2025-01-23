@@ -6,6 +6,9 @@
     <LangVersion>preview</LangVersion>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.10.1" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\DataEntities\DataEntities.csproj" />
     <ProjectReference Include="..\eShopServiceDefaults\eShopServiceDefaults.csproj" />
     <ProjectReference Include="..\SearchEntities\SearchEntities.csproj" />

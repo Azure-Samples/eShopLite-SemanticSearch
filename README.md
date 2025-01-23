@@ -133,6 +133,8 @@ Follow these steps to run the project, locally or in CodeSpaces:
 
 Check the [Video Resources](#resources) for a step-by-step on how to run this project.
 
+> **Note:** Working with .NET Aspire in GitHub Codespaces is not fully supported yet. As a developer you need to perform a lot of manual steps to access the .NET Aspire portal, like changing ports to public, copy the access token and more. The .NET Aspire version 9.1 will improve the whole developer experience. We will update these steps when the version 9.1 is released.
+
 ## .NET Aspire Azure Resources creation
 
 When utilizing Azure resources in your local development environment, you need to:
@@ -183,7 +185,7 @@ This Azure OpenAI service must contain:
 - a `gpt-4o-mini` model named **gpt-4o-mini**
 - a `text-embedding-ada-002` model named **text-embedding-ada-002**
 
-To use these services, edit the the `program.cs`, and change this:
+To use these services, edit the `program.cs`, and change this:
 
 ```csharp
 // in dev scenarios rename this to "openaidev", and check the documentation to reuse existing AOAI resources

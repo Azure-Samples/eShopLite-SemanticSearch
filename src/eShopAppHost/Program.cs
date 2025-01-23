@@ -37,6 +37,14 @@ if (builder.ExecutionContext.IsPublishMode)
         .WithReference(appInsights);
 
     store.WithReference(appInsights);
+
+    products.WithReference(appInsights)
+        .WithReference(aoai)
+        .WithEnvironment("AI_ChatDeploymentName", chatDeploymentName)
+        .WithEnvironment("AI_embeddingsDeploymentName", embeddingsDeploymentName);
+
+    store.WithReference(appInsights)
+        .WithExternalHttpEndpoints();
 }
 else
 {
